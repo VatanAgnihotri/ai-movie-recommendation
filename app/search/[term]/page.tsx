@@ -33,8 +33,8 @@ async function SearchTerm({
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-        {similarMovies.map((movie, i) => (
-          <div className="flex space-x-2 relative">
+        {similarMovies.map((movie,i) => (
+          <div key={movie._id} className="flex space-x-2 relative">
             <p className="absolute flex items-center justify-center left-4 top-2 text-white font-extrabold text-xl z-40 rounded-full bg-indigo-500/80 w-10 h-10">
               {i + 1}
             </p>
